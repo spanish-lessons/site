@@ -1,54 +1,20 @@
-/* Reset des styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Style pour le header */
+header {
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 10px 0; /* Espace autour du contenu */
+    position: fixed; /* Fixe le header en haut de la page */
+    width: 100%; /* Largeur pleine de l'écran */
+    top: 0; /* Place le header au-dessus de la page */
+    z-index: 1; /* Assure que le header est au-dessus de tout le contenu */
   }
   
-  /* Styles généraux */
+  /* Ajoute une marge supérieure équivalente à la hauteur du header */
   body {
-    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Ajuste cette valeur selon la hauteur de ton header */
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 50px; /* Ajuste la taille de l'image selon tes besoins */
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  /* Style pour chaque section de contenu */
   section {
-    padding: 50px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .logo img {
-      width: 30px; /* Ajuste la taille de l'image pour les petits écrans */
-    }
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
+    margin-top: 100px; /* Ajoute un décalage équivalent à la hauteur du header */
   }
   
