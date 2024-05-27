@@ -1,6 +1,5 @@
-/* Style pour le header */
 header {
-    background-color: #f8f9fa;
+    background-color: black;
     padding: 10px 0; /* Espace autour du contenu */
     position: fixed; /* Fixe le header en haut de la page */
     width: 100%; /* Largeur pleine de l'écran */
@@ -30,6 +29,40 @@ header {
   h2 {
     color: #5f9103;
   }
+
+  .container {
+    position: relative; /* Position relative pour positionner les éléments enfants */
+}
+
+header nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  height: 100%; /* Hauteur égale à 100% de son conteneur parent */
+  display: flex; /* Utilise flexbox pour aligner les éléments verticalement */
+  align-items: center; /* Centre verticalement les éléments */
+  background-color: black;
+}
+
+nav ul.list-inline li.list-inline-item:not(:last-child) {
+  margin-right: 40px; /* Espacement de 40 pixels entre chaque bouton */
+}
+
+.banner {
+  padding: 10px 20px; /* Ajoute un peu d'espace autour du texte */
+}
+
+.banner-title {
+  color: white; /* Texte blanc */
+  margin: 0; /* Supprime la marge par défaut du titre */
+}
+
+.nav-container {
+  height: 100%; /* Hauteur égale à 100% de son conteneur parent */
+  display: flex; /* Utilise flexbox pour aligner les éléments verticalement */
+  align-items: center; /* Centre verticalement les éléments */
+}
 
   .card-body {
     display: flex; /* Enable flexbox layout for the card body */
