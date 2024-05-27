@@ -1,6 +1,6 @@
 header {
-    background-color: black;
-    padding: 10px 0; /* Espace autour du contenu */
+    background-color: #F3E99F;
+    padding: 5px 0; /* Espace autour du contenu */
     position: fixed; /* Fixe le header en haut de la page */
     width: 100%; /* Largeur pleine de l'écran */
     top: 0; /* Place le header au-dessus de la page */
@@ -12,6 +12,7 @@ header {
     padding-top: 70px; /* Ajuste cette valeur selon la hauteur de ton header */
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #F3E99F;
   }
   
   /* Style pour chaque section de contenu */
@@ -27,7 +28,8 @@ header {
   }
 
   h2 {
-    color: #5f9103;
+    color: #FF6D60;
+    font-weight: bold;
   }
 
   .container {
@@ -38,15 +40,31 @@ header nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 50%;
+  left: 60%;
   height: 100%; /* Hauteur égale à 100% de son conteneur parent */
   display: flex; /* Utilise flexbox pour aligner les éléments verticalement */
   align-items: center; /* Centre verticalement les éléments */
-  background-color: black;
+  background-color: #F3E99F;
 }
 
 nav ul.list-inline li.list-inline-item:not(:last-child) {
-  margin-right: 40px; /* Espacement de 40 pixels entre chaque bouton */
+  margin-right: 30px; /* Espacement de 40 pixels entre chaque bouton */
+  color: #98D8AA;
+}
+
+nav ul.list-inline li.list-inline-item a {
+  color: #98D8AA; /* Couleur du texte par défaut */
+  font-weight: bold; /* Texte en gras */
+  font-size: 18px; /* Taille de police légèrement plus grande */
+}
+
+nav ul.list-inline li.list-inline-item a:hover {
+  color: #FFB4B4; /* Couleur du texte lorsqu'il est survolé */
+}
+
+nav ul.list-inline li.list-inline-item a:focus,
+nav ul.list-inline li.list-inline-item a:active {
+  color: #FF6D60; /* Couleur du texte lorsque le lien est actif (clic) */
 }
 
 .banner {
@@ -56,6 +74,7 @@ nav ul.list-inline li.list-inline-item:not(:last-child) {
 .banner-title {
   color: white; /* Texte blanc */
   margin: 0; /* Supprime la marge par défaut du titre */
+  font-family: 'Honk', sans-serif;
 }
 
 .nav-container {
