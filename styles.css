@@ -1,6 +1,6 @@
 /* Style pour le header */
 header {
-    background-color: #f8f9fa; /* Couleur de fond */
+    background-color: #dfeb9d; /* Couleur de fond */
     padding: 10px 0; /* Espace autour du contenu */
     position: fixed; /* Fixe le header en haut de la page */
     width: 100%; /* Largeur pleine de l'écran */
@@ -15,6 +15,13 @@ header {
   
   /* Style pour chaque section de contenu */
   section {
-    margin-top: 100px; /* Ajoute un décalage équivalent à la hauteur du header */
+    margin-top: 70px; /* Ajoute un décalage équivalent à la hauteur du header */
+  }
+
+  footer {
+    background-color: #dfeb9d; /* Couleur de fond */
+    padding: 10px 0; /* Espace autour du contenu */
+    position: bottom; /* Fixe le header en bas de la page */
+    width: 100%; /* Largeur pleine de l'écran */
   }
   
