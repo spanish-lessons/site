@@ -1,6 +1,6 @@
 /* Style pour le header */
 header {
-    background-color: #dfeb9d; /* Couleur de fond */
+    background-color: #f8f9fa;
     padding: 10px 0; /* Espace autour du contenu */
     position: fixed; /* Fixe le header en haut de la page */
     width: 100%; /* Largeur pleine de l'écran */
@@ -11,6 +11,8 @@ header {
   /* Ajoute une marge supérieure équivalente à la hauteur du header */
   body {
     padding-top: 70px; /* Ajuste cette valeur selon la hauteur de ton header */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
   }
   
   /* Style pour chaque section de contenu */
@@ -19,9 +21,27 @@ header {
   }
 
   footer {
-    background-color: #dfeb9d; /* Couleur de fond */
+    background-color: #f8f9fa;
     padding: 10px 0; /* Espace autour du contenu */
     position: bottom; /* Fixe le header en bas de la page */
     width: 100%; /* Largeur pleine de l'écran */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .card-title {
+    color: #007bff;
+    font-weight: bold;
+  }
+
+  .card-text {
+    color: #666;
   }
   
