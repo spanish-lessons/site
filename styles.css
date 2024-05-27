@@ -27,12 +27,11 @@ header {
     width: 100%;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
+  h2 {
+    color: #5f9103;
   }
 
   .card-body {
-    /* ... existing styles ... */
     display: flex; /* Enable flexbox layout for the card body */
     flex-direction: column; /* Arrange elements vertically */
     align-items: center; /* Center horizontally */
@@ -72,8 +71,8 @@ header {
   }
 
   .btn-primary:hover {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #3c8de4;
+    border-color: #3c8de4;
   }
 
   @media (max-width: 768px) {
