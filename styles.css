@@ -1,0 +1,108 @@
+/* Style pour le header */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0; /* Espace autour du contenu */
+    position: fixed; /* Fixe le header en haut de la page */
+    width: 100%; /* Largeur pleine de l'écran */
+    top: 0; /* Place le header au-dessus de la page */
+    z-index: 1; /* Assure que le header est au-dessus de tout le contenu */
+  }
+  
+  /* Ajoute une marge supérieure équivalente à la hauteur du header */
+  body {
+    padding-top: 70px; /* Ajuste cette valeur selon la hauteur de ton header */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Style pour chaque section de contenu */
+  section {
+    margin-top: 70px; /* Adjust as needed */
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    position: bottom;
+    width: 100%;
+  }
+
+  h2 {
+    color: #5f9103;
+  }
+
+  .card-body {
+    display: flex; /* Enable flexbox layout for the card body */
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+  }
+
+  .pricing-card {
+    background-color: #fff;
+  }
+
+  .card-title {
+    font-weight: bold;
+  }
+
+  .price-box {
+    /* Adjust spacing and alignment as desired */
+  }
+
+  .price {
+    font-size: 2rem;
+    /* Adjust font-weight for consistency */
+  }
+
+  .text-muted {
+    /* Adjust font-size as needed */
+  }
+
+  .features li {
+    color: #666;
+    line-height: 1.5; /* Improve readability */
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 10px auto; /* Add top and bottom margins and auto-center horizontally */
+  }
+
+  .btn-primary:hover {
+    background-color: #3c8de4;
+    border-color: #3c8de4;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Switch to vertical layout for smaller screens */
+    }
+  
+    .col-md-6, .col-lg-4 {
+      width: 100%; /* Make each card occupy full width */
+      margin-bottom: 20px; /* Add spacing between cards */
+    }
+  
+    .card-body {
+      flex-direction: column; /* Arrange elements vertically within each card */
+      align-items: flex-start; /* Align content to the left */
+      padding: 20px; /* Add padding for visual breathing room */
+    }
+  
+    .price-box {
+      margin-bottom: 10px; /* Add spacing between price and features */
+    }
+  
+    .features {
+      margin-top: 0; /* Remove default margin-top */
+      list-style: none; /* Remove bullet points */
+      padding: 0; /* Remove default padding */
+    }
+  
+    .features li {
+      padding: 5px 0; /* Add spacing between list items */
+      border-bottom: 1px solid #ddd; /* Add subtle divider */
+    }
+  }
