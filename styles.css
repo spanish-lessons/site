@@ -1,73 +1,80 @@
 header {
-    background-color: #F3E99F;
-    padding: 5px 0; /* Espace autour du contenu */
-    position: fixed; /* Fixe le header en haut de la page */
-    width: 100%; /* Largeur pleine de l'écran */
-    top: 0; /* Place le header au-dessus de la page */
-    z-index: 1; /* Assure que le header est au-dessus de tout le contenu */
-  }
-  
-  /* Ajoute une marge supérieure équivalente à la hauteur du header */
-  body {
-    padding-top: 70px; /* Ajuste cette valeur selon la hauteur de ton header */
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #F3E99F;
-  }
-  
-  /* Style pour chaque section de contenu */
-  section {
-    margin-top: 70px; /* Adjust as needed */
-  }
+  background-color: #F3E99F;
+  padding: 5px 0; /* Espace autour du contenu */
+  position: fixed; /* Fixe le header en haut de la page */
+  width: 100%; /* Largeur pleine de l'écran */
+  top: 0; /* Place le header au-dessus de la page */
+  z-index: 1; /* Assure que le header est au-dessus de tout le contenu */
+}
 
-  footer {
-    background-color: #f8f9fa;
-    padding: 10px 0;
-    position: bottom;
-    width: 100%;
-  }
+body {
+  padding-top: 120px; /* Ajuste cette valeur selon la hauteur de ton header */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #F3E99F;
+}
 
-  h2 {
-    color: #FF6D60;
-    font-weight: bold;
-  }
+section {
+  margin-top: 70px; /* Adjust as needed */
+}
 
-  .container {
-    position: relative; /* Position relative pour positionner les éléments enfants */
+footer {
+  background-color: #F3E99F;
+  padding: 10px 0;
+  width: 100%;
+}
+
+h2 {
+  color: #FF6D60;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: relative; /* Position relative pour positionner les éléments enfants */
 }
 
 header nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 60%;
-  height: 100%; /* Hauteur égale à 100% de son conteneur parent */
-  display: flex; /* Utilise flexbox pour aligner les éléments verticalement */
-  align-items: center; /* Centre verticalement les éléments */
+  height: 100%;  /* Keeps full height of parent */
+  display: flex;
+  flex-direction: column;  /* Align items vertically */
+  align-items: center;  /* Center horizontally */
   background-color: #F3E99F;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav ul.list-inline {
+  flex-direction: column; /* Arrange les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  padding: 0; /* Remove default padding */
 }
 
 nav ul.list-inline li.list-inline-item:not(:last-child) {
   margin-right: 30px; /* Espacement de 40 pixels entre chaque bouton */
-  color: #98D8AA;
+  color: #86C8BC;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav ul.list-inline li.list-inline-item a {
-  color: #98D8AA; /* Couleur du texte par défaut */
+  color: #86C8BC; /* Couleur du texte par défaut */
   font-weight: bold; /* Texte en gras */
-  font-size: 18px; /* Taille de police légèrement plus grande */
+  font-size: 24px; /* Taille de police légèrement plus grande */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav ul.list-inline li.list-inline-item a:hover {
   color: #FFB4B4; /* Couleur du texte lorsqu'il est survolé */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav ul.list-inline li.list-inline-item a:focus,
 nav ul.list-inline li.list-inline-item a:active {
   color: #FF6D60; /* Couleur du texte lorsque le lien est actif (clic) */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .banner {
+  text-align: center; /* Centre le texte de la bannière */
   padding: 10px 20px; /* Ajoute un peu d'espace autour du texte */
 }
 
@@ -75,86 +82,45 @@ nav ul.list-inline li.list-inline-item a:active {
   color: white; /* Texte blanc */
   margin: 0; /* Supprime la marge par défaut du titre */
   font-family: 'Honk', sans-serif;
+  font-optical-sizing: auto;
 }
 
-.nav-container {
-  height: 100%; /* Hauteur égale à 100% de son conteneur parent */
-  display: flex; /* Utilise flexbox pour aligner les éléments verticalement */
-  align-items: center; /* Centre verticalement les éléments */
+#aboutus {
+  text-align: center; /* Centre les éléments de la section "About us" */
 }
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Switch to vertical layout for smaller screens */
+  }
+
+  .col-md-6, .col-lg-4 {
+    width: 100%; /* Make each card occupy full width */
+    margin-bottom: 20px; /* Add spacing between cards */
+  }
+
+  nav ul.list-inline li.list-inline-item:not(:last-child) {
+    margin-right: 10px; /* Réduire l'espace entre les boutons */
+  }
 
   .card-body {
-    display: flex; /* Enable flexbox layout for the card body */
-    flex-direction: column; /* Arrange elements vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-  }
-
-  .pricing-card {
-    background-color: #fff;
-  }
-
-  .card-title {
-    font-weight: bold;
+    flex-direction: column; /* Arrange elements vertically within each card */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px; /* Add padding for visual breathing room */
   }
 
   .price-box {
-    /* Adjust spacing and alignment as desired */
+    margin-bottom: 10px; /* Add spacing between price and features */
   }
 
-  .price {
-    font-size: 2rem;
-    /* Adjust font-weight for consistency */
-  }
-
-  .text-muted {
-    /* Adjust font-size as needed */
+  .features {
+    margin-top: 0; /* Remove default margin-top */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
   }
 
   .features li {
-    color: #666;
-    line-height: 1.5; /* Improve readability */
+    padding: 5px 0; /* Add spacing between list items */
+    border-bottom: 1px solid #ddd; /* Add subtle divider */
   }
-
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    margin: 10px auto; /* Add top and bottom margins and auto-center horizontally */
-  }
-
-  .btn-primary:hover {
-    background-color: #3c8de4;
-    border-color: #3c8de4;
-  }
-
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column; /* Switch to vertical layout for smaller screens */
-    }
-  
-    .col-md-6, .col-lg-4 {
-      width: 100%; /* Make each card occupy full width */
-      margin-bottom: 20px; /* Add spacing between cards */
-    }
-  
-    .card-body {
-      flex-direction: column; /* Arrange elements vertically within each card */
-      align-items: flex-start; /* Align content to the left */
-      padding: 20px; /* Add padding for visual breathing room */
-    }
-  
-    .price-box {
-      margin-bottom: 10px; /* Add spacing between price and features */
-    }
-  
-    .features {
-      margin-top: 0; /* Remove default margin-top */
-      list-style: none; /* Remove bullet points */
-      padding: 0; /* Remove default padding */
-    }
-  
-    .features li {
-      padding: 5px 0; /* Add spacing between list items */
-      border-bottom: 1px solid #ddd; /* Add subtle divider */
-    }
-  }
+}
