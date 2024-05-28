@@ -1,5 +1,5 @@
 header {
-  background-color: #F3E99F;
+  background-color: #EEF7FF;
   padding: 5px 0; /* Espace autour du contenu */
   position: fixed; /* Fixe le header en haut de la page */
   width: 100%; /* Largeur pleine de l'écran */
@@ -11,21 +11,30 @@ body {
   padding-top: 120px; /* Ajuste cette valeur selon la hauteur de ton header */
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #F3E99F;
+  background-color: #EEF7FF;
 }
 
 section {
-  margin-top: 70px; /* Adjust as needed */
+  margin-top: 50px; /* Adjust as needed */
+  margin-bottom: 30px;
 }
 
 footer {
-  background-color: #F3E99F;
+  background-color: #EEF7FF;
   padding: 10px 0;
   width: 100%;
+  text-align: center;
 }
 
 h2 {
-  color: #FF6D60;
+  color: #4D869C;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  margin-bottom: 30px;
+  color: #7AB2B2;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -39,7 +48,7 @@ header nav {
   display: flex;
   flex-direction: column;  /* Align items vertically */
   align-items: center;  /* Center horizontally */
-  background-color: #F3E99F;
+  background-color: #EEF7FF;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -51,12 +60,12 @@ nav ul.list-inline {
 
 nav ul.list-inline li.list-inline-item:not(:last-child) {
   margin-right: 30px; /* Espacement de 40 pixels entre chaque bouton */
-  color: #86C8BC;
+  color: #7AB2B2;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 nav ul.list-inline li.list-inline-item a {
-  color: #86C8BC; /* Couleur du texte par défaut */
+  color: #7AB2B2; /* Couleur du texte par défaut */
   font-weight: bold; /* Texte en gras */
   font-size: 24px; /* Taille de police légèrement plus grande */
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -69,7 +78,7 @@ nav ul.list-inline li.list-inline-item a:hover {
 
 nav ul.list-inline li.list-inline-item a:focus,
 nav ul.list-inline li.list-inline-item a:active {
-  color: #FF6D60; /* Couleur du texte lorsque le lien est actif (clic) */
+  color: #4D869C; /* Couleur du texte lorsque le lien est actif (clic) */
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -83,9 +92,58 @@ nav ul.list-inline li.list-inline-item a:active {
   margin: 0; /* Supprime la marge par défaut du titre */
   font-family: 'Honk', sans-serif;
   font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.card-body {
+  background-color: #EEF7FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre horizontalement */
+  justify-content: center; /* Centre verticalement */
+}
+
+.card-title {
+  color: #4D869C; /* Changer la couleur du titre de la carte */
+}
+
+.list-unstyled li {
+  font-style: italic; /* Mettre le texte des éléments de liste en italique */
+}
+
+.btn-primary {
+  background-color: #7AB2B2; /* Couleur de fond du bouton */
+  border-color: #7AB2B2; /* Couleur de la bordure du bouton */
+  color: white; /* Couleur du texte du bouton */
+}
+
+.btn-primary:hover {
+  background-color: #4D869C; /* Couleur de fond du bouton au survol */
+  border-color: #4D869C; /* Couleur de la bordure du bouton au survol */
+  color: white; /* Couleur du texte du bouton au survol */
+}
+
+.price {
+  font-weight: bold; /* Mettre le prix en gras */
 }
 
 #aboutus {
+  text-align: center; /* Centre les éléments de la section "About us" */
+}
+
+#paymentmethods {
+  text-align: center;
+}
+
+#tours {
+  text-align: center;
+}
+
+#avis {
+  text-align: center;
+}
+
+#contact {
   text-align: center; /* Centre les éléments de la section "About us" */
 }
 
@@ -106,6 +164,8 @@ nav ul.list-inline li.list-inline-item a:active {
   .card-body {
     flex-direction: column; /* Arrange elements vertically within each card */
     align-items: flex-start; /* Align content to the left */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
     padding: 20px; /* Add padding for visual breathing room */
   }
 
