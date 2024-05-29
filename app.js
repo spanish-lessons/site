@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('header nav ul li a');
 
-    function scrollToSection(targetSection, offset) {
-        const targetPosition = targetSection.offsetTop - offset;
+    function scrollToSection(targetSection) {
+        const targetPosition = targetSection.offsetTop;
         window.scrollTo({
             top: targetPosition,
             behavior: 'smooth'
@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             const targetId = link.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            const headerHeight = document.querySelector('header').offsetHeight;
-            const offset = headerHeight + 20; // Ajustez ce décalage selon vos besoins
-            scrollToSection(targetSection, offset);
+            scrollToSection(targetSection);
         });
     });
 
@@ -27,9 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 event.preventDefault();
                 const targetId = link.getAttribute('href').substring(1);
                 const targetSection = document.getElementById(targetId);
-                const headerHeight = document.querySelector('header').offsetHeight;
-                const offset = headerHeight + 20; // Ajustez ce décalage selon vos besoins
-                scrollToSection(targetSection, offset);
+                scrollToSection(targetSection);
             });
         });
     });
