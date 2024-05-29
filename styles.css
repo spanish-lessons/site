@@ -1,10 +1,11 @@
 /* Header */
 header {
   background-color: #EEF7FF;
-  padding: 90px 0;
+  padding: 90px 0 20px; /* Ajoutez une marge en bas pour laisser de l'espace aux boutons de navigation */
   width: 100%;
   top: 0;
   z-index: 1;
+  position: relative; /* Ajout d'une position relative pour positionner les boutons de navigation */
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
@@ -36,6 +37,8 @@ section {
   font-family: 'Honk', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 h2 {
@@ -54,13 +57,24 @@ h3 {
 
 /* Navigation */
 header nav {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: absolute; /* Position absolue par rapport à l'en-tête */
+  bottom: 0; /* Positionne le bas de la navigation au bas de l'en-tête */
+  left: 0; /* Aligne la navigation à gauche de l'en-tête */
+  width: 100%; /* Utilise la largeur complète de l'en-tête */
   background-color: rgba(238, 247, 255, 0.2); /* Couleur avec transparence */
   backdrop-filter: blur(5px); /* Flou pour un effet de verre */
   -webkit-backdrop-filter: blur(5px); /* Flou pour un effet de verre (pour Safari) */
+}
+
+nav ul.list-inline {
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  margin: 0; /* Supprime la marge par défaut */
+  padding: 0; /* Supprime le remplissage par défaut */
+}
+
+nav ul.list-inline li.list-inline-item {
+  margin: 0 10px; /* Espacement entre les éléments */
 }
 
 nav ul.list-inline li.list-inline-item a {
