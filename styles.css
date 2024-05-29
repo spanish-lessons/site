@@ -1,95 +1,35 @@
+/* Header */
 header {
   background-color: #EEF7FF;
-  padding: 5px 0; /* Espace autour du contenu */
-  position: fixed; /* Fixe le header en haut de la page */
-  width: 100%; /* Largeur pleine de l'écran */
-  top: 0; /* Place le header au-dessus de la page */
-  z-index: 1; /* Assure que le header est au-dessus de tout le contenu */
-  background-image: url('background.jpg'); /* Spécifie l'image de fond */
-  background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
-  background-position: center; /* Centre l'image */
-  opacity: 1.2; /* Définit la transparence */
+  padding: 90px 0;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1.2;
 }
 
+/* Body */
 body {
-  padding-top: 120px; /* Ajuste cette valeur selon la hauteur de ton header */
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #EEF7FF;
 }
 
-section {
-  margin-top: 50px; /* Adjust as needed */
-  margin-bottom: 30px;
+#aboutus {
+  margin-top: 0px;
 }
 
-footer {
-  background-color: #EEF7FF;
-  padding: 10px 0;
-  width: 100%;
+/* Sections */
+section {
+  margin-top: 0px;
+  margin-bottom: 0;
   text-align: center;
 }
 
-h2 {
-  color: #4D869C;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-h3 {
-  margin-bottom: 30px;
-  color: #7AB2B2;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.container {
-  position: relative; /* Position relative pour positionner les éléments enfants */
-}
-
-header nav {
-  height: 100%;  /* Keeps full height of parent */
-  display: flex;
-  flex-direction: column;  /* Align items vertically */
-  align-items: center;  /* Center horizontally */
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-nav ul.list-inline {
-  flex-direction: column; /* Arrange les éléments verticalement */
-  align-items: center; /* Centre les éléments horizontalement */
-  padding: 0; /* Remove default padding */
-}
-
-nav ul.list-inline li.list-inline-item:not(:last-child) {
-  margin-right: 30px; /* Espacement de 40 pixels entre chaque bouton */
-  color: #7AB2B2;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-nav ul.list-inline li.list-inline-item a {
-  color: #7AB2B2; /* Couleur du texte par défaut */
-  font-weight: bold; /* Texte en gras */
-  font-size: 24px; /* Taille de police légèrement plus grande */
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-nav ul.list-inline li.list-inline-item a:hover {
-  color: #FFB4B4; /* Couleur du texte lorsqu'il est survolé */
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-nav ul.list-inline li.list-inline-item a:focus,
-nav ul.list-inline li.list-inline-item a:active {
-  color: #4D869C; /* Couleur du texte lorsque le lien est actif (clic) */
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.banner {
-  text-align: center; /* Centre le texte de la bannière */
-  padding: 10px 20px; /* Ajoute un peu d'espace autour du texte */
-}
-
+/* Typography */
 .banner-title {
   color: white; /* Texte blanc */
   margin: 0; /* Supprime la marge par défaut du titre */
@@ -98,92 +38,101 @@ nav ul.list-inline li.list-inline-item a:active {
   font-weight: 400;
 }
 
+h2 {
+  color: #4D869C;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #7AB2B2;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+header nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(238, 247, 255, 0.2); /* Couleur avec transparence */
+  backdrop-filter: blur(5px); /* Flou pour un effet de verre */
+  -webkit-backdrop-filter: blur(5px); /* Flou pour un effet de verre (pour Safari) */
+}
+
+nav ul.list-inline li.list-inline-item a {
+  color: #0c313f;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  opacity: 1; /* Opacité totale */
+}
+
+nav ul.list-inline li.list-inline-item a:hover {
+  color: #eb6f6f;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+nav ul.list-inline li.list-inline-item a:focus,
+nav ul.list-inline li.list-inline-item a:active {
+  color: #0c313f;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+/* Cards */
 .card-body {
   background-color: #EEF7FF;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centre horizontalement */
-  justify-content: center; /* Centre verticalement */
+  align-items: center;
+  justify-content: center;
 }
 
 .card-title {
-  color: #4D869C; /* Changer la couleur du titre de la carte */
+  color: #4D869C;
 }
 
-.list-unstyled li {
-  font-style: italic; /* Mettre le texte des éléments de liste en italique */
-}
-
+/* Buttons */
 .btn-primary {
-  background-color: #7AB2B2; /* Couleur de fond du bouton */
-  border-color: #7AB2B2; /* Couleur de la bordure du bouton */
-  color: white; /* Couleur du texte du bouton */
+  background-color: #7AB2B2;
+  border-color: #7AB2B2;
+  color: white;
 }
 
 .btn-primary:hover {
-  background-color: #4D869C; /* Couleur de fond du bouton au survol */
-  border-color: #4D869C; /* Couleur de la bordure du bouton au survol */
-  color: white; /* Couleur du texte du bouton au survol */
+  background-color: #4D869C;
+  border-color: #4D869C;
+  color: white;
 }
 
+/* Pricing */
 .price {
-  font-weight: bold; /* Mettre le prix en gras */
+  font-weight: bold;
 }
 
-#aboutus {
-  text-align: center; /* Centre les éléments de la section "About us" */
-}
-
-#paymentmethods {
-  text-align: center;
-}
-
-#tours {
-  text-align: center;
-}
-
-#avis {
-  text-align: center;
-}
-
-#contact {
-  text-align: center; /* Centre les éléments de la section "About us" */
-}
-
+/* Responsive */
 @media (max-width: 768px) {
   .row {
-    flex-direction: column; /* Switch to vertical layout for smaller screens */
+    flex-direction: column;
   }
 
   .col-md-6, .col-lg-4 {
-    width: 100%; /* Make each card occupy full width */
-    margin-bottom: 20px; /* Add spacing between cards */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   nav ul.list-inline li.list-inline-item:not(:last-child) {
-    margin-right: 10px; /* Réduire l'espace entre les boutons */
+    margin-right: 10px;
   }
 
   .card-body {
-    flex-direction: column; /* Arrange elements vertically within each card */
-    align-items: flex-start; /* Align content to the left */
-    align-items: center; /* Centre horizontalement */
-    justify-content: center; /* Centre verticalement */
-    padding: 20px; /* Add padding for visual breathing room */
-  }
-
-  .price-box {
-    margin-bottom: 10px; /* Add spacing between price and features */
-  }
-
-  .features {
-    margin-top: 0; /* Remove default margin-top */
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-  }
-
-  .features li {
-    padding: 5px 0; /* Add spacing between list items */
-    border-bottom: 1px solid #ddd; /* Add subtle divider */
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 }
