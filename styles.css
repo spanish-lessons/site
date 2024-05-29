@@ -6,7 +6,7 @@ header {
   top: 0;
   z-index: 1;
   position: relative; /* Ajout d'une position relative pour positionner les boutons de navigation */
-  background-image: url('background.jpg');
+  background-image: url('background.jpg'); /* Description: Background image of Speak Spanish Or Die School */
   background-size: cover;
   background-position: center;
   opacity: 1.2;
