@@ -1,7 +1,7 @@
 /* Header */
 header {
   background-color: #EEF7FF;
-  padding: 90px 0 20px; /* Ajoutez une marge en bas pour laisser de l'espace aux boutons de navigation */
+  padding: 110px 0 20px; /* Ajoutez une marge en bas pour laisser de l'espace aux boutons de navigation */
   width: 100%;
   top: 0;
   z-index: 1;
@@ -11,6 +11,12 @@ header {
   background-position: center;
   opacity: 1.2;
 }
+
+/* Footer */
+body {
+  text-align: center;
+}
+
 
 /* Body */
 body {
@@ -25,8 +31,8 @@ body {
 
 /* Sections */
 section {
-  margin-top: 0px;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: -50px;
   text-align: center;
 }
 
@@ -37,7 +43,7 @@ section {
   font-family: 'Honk', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
@@ -45,7 +51,8 @@ h2 {
   color: #4D869C;
   margin-bottom: 10px;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ajout d'une ombre portée */
+  font-size: 2em; /* Augmentation de la taille de la police */
 }
 
 h3 {
@@ -136,6 +143,20 @@ nav ul.list-inline li.list-inline-item a:active {
   .col-md-6, .col-lg-4 {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  nav ul.list-inline {
+    flex-direction: row; /* Affiche les éléments de manière horizontale */
+    flex-wrap: wrap; /* Permet aux éléments de se replier sur plusieurs lignes si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+  }
+
+  nav ul.list-inline li.list-inline-item {
+    margin: 10px 0; /* Espacement entre les éléments */
+  }
+
+  nav ul.list-inline li.list-inline-item a {
+    font-size: 16px; /* Taille de la police réduite pour les écrans plus petits */
   }
 
   nav ul.list-inline li.list-inline-item:not(:last-child) {
