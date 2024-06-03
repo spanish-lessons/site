@@ -177,6 +177,8 @@ nav ul.list-inline li.list-inline-item a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px; /* Rayon de courbure des coins */
+  overflow: hidden; /* Masque le contenu qui dépasse du cadre de l'image */
 }
 
 /* Responsive */
