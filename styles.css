@@ -134,6 +134,19 @@ nav ul.list-inline li.list-inline-item a:active {
   font-weight: bold;
 }
 
+/* Image */
+
+.custom-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Ajustez cette valeur selon vos besoins */
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .row {
