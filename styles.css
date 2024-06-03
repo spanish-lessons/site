@@ -146,6 +146,38 @@ nav ul.list-inline li.list-inline-item a:active {
   margin-right: auto;
 }
 
+/* Carousel */
+#carouselExampleControls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style du carrousel */
+.carousel {
+  background-color: #f8f9fa; /* Couleur de fond */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Indicateurs du carrousel */
+.carousel-indicators li {
+  background-color: #007bff; /* Couleur de fond des indicateurs */
+  border-radius: 50%; /* Forme arrondie */
+}
+
+.carousel-indicators .active {
+  background-color: #0056b3; /* Couleur de fond de l'indicateur actif */
+}
+
+
+/* Centre les images verticalement */
+.carousel-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
