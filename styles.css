@@ -177,6 +177,18 @@ nav ul.list-inline li.list-inline-item a:active {
   background-color: #0056b3; /* Couleur de fond de l'indicateur actif */
 }
 
+/* Légendes du carrousel */
+.carousel-caption {
+  position: absolute;
+  bottom: 10px; /* Ajustez cette valeur pour descendre la légende */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Optionnel : ajoute un fond semi-transparent pour la légende */
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+}
+
 /* Centre les images verticalement */
 .carousel-item img {
   height: 100%; /* Nouvelle valeur */
@@ -185,6 +197,13 @@ nav ul.list-inline li.list-inline-item a:active {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px; /* Taille de police plus petite pour les petits écrans */
+    padding: 5px; /* Réduire le padding */
+    bottom: 10px; /* Position légèrement ajustée */
+    width: 95%; /* Augmente la largeur pour les petits écrans */
+  }
+
   .row {
     flex-direction: column;
   }
