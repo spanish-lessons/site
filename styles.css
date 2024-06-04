@@ -135,15 +135,15 @@ nav ul.list-inline li.list-inline-item a:active {
 }
 
 /* Image */
-
 .custom-img {
   max-width: 100%;
-  height: auto;
-  max-height: 400px; /* Ajustez cette valeur selon vos besoins */
-  width: auto;
+  height: 100%; /* Nouvelle valeur */
+  object-fit: cover; /* Couvrir toute la zone sans déformer l'image */
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px; /* Rayon de courbure des coins */
+  overflow: hidden; /* Masque le contenu qui dépasse du cadre de l'image */
 }
 
 /* Carousel */
@@ -152,11 +152,17 @@ nav ul.list-inline li.list-inline-item a:active {
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 20px;
+  max-height: 400px; /* Hauteur maximale du carousel */
+}
+
+/* Carousel item */
+.carousel-item {
+  height: 400px; /* Hauteur fixe pour chaque item */
 }
 
 /* Style du carrousel */
 .carousel {
-  background-color: #f8f9fa; /* Couleur de fond */
+  background-color: #EEF7FF; /* Couleur de fond */
   padding: 20px;
   border-radius: 10px;
 }
@@ -171,14 +177,10 @@ nav ul.list-inline li.list-inline-item a:active {
   background-color: #0056b3; /* Couleur de fond de l'indicateur actif */
 }
 
-
 /* Centre les images verticalement */
 .carousel-item img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px; /* Rayon de courbure des coins */
-  overflow: hidden; /* Masque le contenu qui dépasse du cadre de l'image */
+  height: 100%; /* Nouvelle valeur */
+  object-fit: cover; /* Couvrir toute la zone sans déformer l'image */
 }
 
 /* Responsive */
